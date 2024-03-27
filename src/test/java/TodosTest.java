@@ -42,6 +42,7 @@ public class TodosTest {
         Task[] actual = todos.search("Позвонить родителям");
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldMatchedEpic() {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
@@ -53,6 +54,7 @@ public class TodosTest {
         Task[] actual = todos.search("Хлеб");
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldMatchedMeeting() {
         Meeting meeting = new Meeting(

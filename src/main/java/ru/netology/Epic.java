@@ -17,13 +17,13 @@ public class Epic extends Task {
 
     @Override
     public boolean matches(String query) {
-       for (String result : subtasks) {
-           if (result.contains(query)) {
-               return true;
-           }
-       }
-            return false;
-
+        for (String result : subtasks) {
+            if (result.contains(query)) {
+                return true;
+            }
         }
+        return false;
+
     }
+}
 

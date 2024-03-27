@@ -20,6 +20,6 @@ public class SimpleTask extends Task {
             return true;
         }
         return false;
-        }
     }
+}
 
